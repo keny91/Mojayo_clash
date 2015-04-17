@@ -1,0 +1,822 @@
+/*!
+ * General Style page
+ *
+ * Dermasalud.es
+ *
+ */
+ /*FONTS*/
+
+ @font-face { font-family: "Colaborative"; src: url("./fonts/ColabLig.otf"); 
+}
+
+body{
+
+	font-family: Colaborative;
+}
+
+/*END FONTS*/
+.navbarcontainer{
+	vertical-align: bottom;
+	width: inherit;
+	height: 100px;
+	background-color: blue;
+
+}
+.over_navbar{
+	/*vertical-align: center;*/
+	width: 100%;
+	height: 100px;
+
+	background-color: rgba(95, 161, 192, 0.61);
+	background: url(../img/fondo_logo.jpg);
+	background-size: 100% auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 100;
+
+}
+
+.abs_position{	position: absolute;}
+
+.nav_correct{	margin-bottom: 0px;
+	background-color: #4E4E4E;
+	border-color: #BD9406;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.nav_correct .navbar-nav > .active > a {
+
+	color: #000;
+	background-color: #B6B6B6;
+
+}
+
+
+.img_fondo{
+	position: relative;
+	top: 0;
+	left: 0;
+
+	height: 400px;
+	
+	/*background-size: cover;*/
+	/*background-repeat: fixed;*/
+	/*width: inherit;*/
+	/*height: inherit;*/
+	/*max-width: 100%;*/
+	padding-top: 0px;
+	padding-bottom: 0px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
+}
+
+
+
+.img_fondo_info{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 400px;
+	
+	/*background-size: 100% 600px;*/
+	
+	/*background-repeat: fixed;*/
+	/*width: inherit;*/
+	/*height: inherit;*/
+	max-width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	
+}
+
+
+.fondo_contactos{
+	background: url(../img/sample3.jpg);
+	background-size: cover;
+}
+
+.fondo_home{
+	background: url(../img/fondo_inicio_saturado.jpg);
+	background-size: cover;
+}
+
+.fondo_tratamientos{
+	background: url(../img/sample3.jpg);
+	background-size: cover;
+}
+.fondo_conocenos{
+	background: url(../img/sample3.jpg);
+	background-size: cover;
+}
+
+
+.list_tratamientos li{
+	font-size: 20pt;
+
+}
+
+
+
+
+/*Fade on load*/
+
+#wrapper_bloc {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+.triple_image_container{
+
+	position: relative;
+	/*width: 100%;*/
+
+}
+
+.triple_image_first{
+
+	position: absolute;
+	width: 100px;
+	height: 150px;
+
+	top: 40px;
+	left: 100px;
+}
+
+.triple_image_second{
+
+	position: absolute;
+	width: 100px;
+	height: 150px;
+
+	top: 120px;
+	left: 200px;
+}
+
+.triple_image_third{
+	position: absolute;
+	width: 100px;
+	height: 150px;
+
+	top: 190px;
+	left: 300px;
+}
+
+.second_plane_img{
+	position: absolute;
+	top: 60px;
+	left: 90px;
+	width: 350px;
+    height: 220px;
+    z-index: 1;
+
+}
+
+.first_plane_img_bot_left{
+
+	position: absolute;
+	top: 190px;
+	left: 40px;
+	width: 180px;
+    height: 125px;
+
+    /*background-color: yellow;*/
+    /*rgba(95, 161, 192, 0.61)*/
+    box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.61);
+    overflow: inherit;
+	
+}
+
+.first_plane_img_top_right{
+
+	position: absolute;
+	top: 190px;
+	left: 40px;
+	width: 180px;
+    height: 125px;
+
+    /*background-color: yellow;*/
+    /*rgba(95, 161, 192, 0.61)*/
+    /*box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.61);*/
+    overflow: inherit;
+	
+}
+
+.single_image{
+
+	position: absolute;
+	top: 60px;
+	left: 90px;
+	width: 400px;
+    height: 250px;
+
+    /*background-color: yellow;*/
+    /*rgba(95, 161, 192, 0.61)*/
+    /*box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.61);*/
+    /*overflow: inherit;*/
+
+}
+
+.on_top{
+	z-index: 100;
+	opacity: 1;
+}
+
+.resizable_hover_image{
+
+	z-index: 1;
+	opacity: 0.7;
+}
+
+
+.rotulo_remark{
+	position: relative;
+	background-color: rgba(60, 60, 100, 0.6);
+	margin-top: 50px;
+	padding: 10px 50px 10px 30px;
+	padding-right: 0px;
+	border-radius: 5px;
+
+
+	font-family: arial;
+	font-size: 30pt;
+	font-weight: bold;	
+	color: rgba(30, 30, 30, 1);
+
+}
+
+.rotulo_imagen_fondo{
+	position: absolute;
+	/*opacity: 0.6;*/
+	/*top: -10px;*/
+	
+	bottom: -20px;
+	padding: 10px 20px 10px 0px;
+	font-family: arial;
+	font-size: 40pt;
+	font-weight: bold;	
+	color: rgba(30, 30, 30, 1);
+
+
+	background-color: rgba(255, 255, 255, 0.6);
+	
+	
+	/*vertical-align: left;*/
+	/*	padding-bottom: 20px; */
+}
+
+/*
+.img_jumbo{
+
+	z-index: -100;
+	width: 100%;
+	height: 
+	
+	}*/
+
+
+.rotulo_color{
+	color: #EFEFEF;
+}
+
+
+.rotulo1{
+	padding-top: 70px;
+	/*font-family: arial;*/
+	font-size: 56pt;
+	font-weight: 700;
+	/*vertical-align: left;*/
+	padding-bottom: 20px;
+}
+
+.rotulo2{
+	position: relative;
+	top: -65px;
+	/*	font-family: arial thin;*/
+	font-size: 56pt;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+
+.rotulo_texto1{
+	position: relative;
+	font-family: Colaborative;
+	top: -60px;
+	font-size: 18pt;
+	font-weight: 300;
+
+}
+
+.rotulo_texto2{
+	position: relative;
+	font-family: Colaborative;
+	top: -80px;
+	font-size: 18pt;
+	font-weight: 300;
+	/*vertical-align: left;*/
+}
+
+.imagen_fondo_complementaria{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	right: 0
+
+}
+
+.extra-padding-4d{	padding: 10px 20px 10px 20px;}
+
+.color-container{	
+	border-radius: 5px;
+	background-color: #81ABC1;}
+
+.color-icon{
+	/*position: relative;*/
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+/*	left: 50%;
+right: -45px;*/
+	top:45px;
+	width: 90px;
+	height: 90px;
+
+}
+.over-color-icon{
+	position: relative;
+	z-index: 100;
+}
+
+  .disappear{
+    display: none;
+  }
+  .appear{
+    display: block;
+  }
+
+
+#bloque_expositor.expositor_fondo{
+	top: 0;
+	left: 0;
+	/*height: 400px;*/
+	background-color: rgba(202,210,217,1);
+	background-size: 100% 600px;
+	/*background-repeat: fixed;*/
+	padding-top: 15px;
+	margin-top: 30px;
+	/*width: inherit;*/
+	/*height: inherit;*/
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
+}
+
+
+.aligned_block{
+
+	text-align: center;
+	vertical-align: middle;
+}
+
+.expositor_fondo{
+
+		top: 0;
+	left: 0;
+	/*height: 400px;*/
+	
+	background-color: rgba(202,210,217,1);
+	background-size: 100% 600px;
+	/*background-repeat: fixed;*/
+	padding-top: 15px;
+	margin-top: 0px;
+	/*width: inherit;*/
+	/*height: inherit;*/
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+#contenedor_imagenes.expositor_fondo{
+
+	top: 0px;
+	left: 0;
+	/*height: 400px;*/
+	
+	background-color: rgba(202,210,217,1);
+	background-size: 100% 600px;
+	/*background-repeat: fixed;*/
+	padding-top: 15px;
+	/*margin-top: 50px;*/
+	/*width: inherit;*/
+	/*height: inherit;*/
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 0px;
+
+}
+
+#rotulo_menciones.expositor_fondo{
+
+	top: 30px;
+	left: 0;
+	/*height: 400px;*/
+	
+	background-color: rgba(202,210,217,1);
+	background-size: 100% 600px;
+	/*background-repeat: fixed;*/
+
+	margin-top: 50px;
+	/*width: inherit;*/
+	/*height: inherit;*/
+	width: 400px;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-bottom: 10px;
+
+}
+
+.expositor_pie_pagina{
+	top: 0;
+	left: 0;
+	color: #FFF;
+	/*height: 400px;*/
+	background-color: rgba(140,140,140,1);
+	background-size: 100% auto;
+	/*background-repeat: fixed;*/
+	padding-top: 15px;
+	margin-top: 50px;
+	/*width: inherit;*/
+	/*height: inherit;*/
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
+}
+/*
+div.footer_color{*/
+
+.opacity_50to100{
+
+
+    /*filter: alpha(opacity=50);  */
+    opacity: 0.45;
+	/*color: #FFF;*/
+	
+	}
+
+  .opacity_50to100:hover{
+    opacity: 1;
+    transition: opacity 800ms;
+    filter: alpha(opacity=50);  
+  }
+
+
+a.opacity_50to100{
+
+	color: #FFF;
+    /*filter: alpha(opacity=50);  */
+    opacity: 0.45;
+	/*color: #FFF;*/
+	
+	}
+
+a.opacity_50to100:hover{
+    opacity: 1;
+    transition: opacity 800ms;
+    filter: alpha(opacity=50);  
+
+  }
+
+p.hover_link:hover{
+    text-decoration: underline;
+
+  }
+
+.remark-cite{
+
+	background-color:rgba(180,180,230,1);
+	position: relative;
+	display: block;
+	
+	width: 95%;
+	font-size: 18pt;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.first_font_footer{
+	position: relative;
+	display:inline;
+	font-weight: 700px;
+	font-size: 14pt;
+}
+
+.second_font_footer{
+	position: relative;
+	margin-top: 4pt;
+	/*display:inline;*/
+	font-weight: 700px;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: left;
+
+}
+
+.third_font_footer{
+
+	text-align: right;
+	font-weight: 700px;
+	font-size: 12pt;
+}
+
+/*Separador para poner en la izquierda*/
+.mycontent-left {
+	border-right: 1px dashed #333;
+}
+
+
+.image-transition{
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+
+}
+
+hr { display: block; height: 1px;
+	border: 0; border-top: 1px solid #ccc;
+	margin: 1em 0; padding: 0; }
+
+.large-font{	
+	font-size: 22pt;}
+
+.medium-font{
+	font-size: 18pt;
+	display: inline;
+	
+	}
+
+
+.medium-font-bold{
+	font-size: 14pt;
+	font-weight: bold;
+	font-family: arial;
+	}
+
+.left-align-text{
+	/*position: relative;*/
+	float: right;
+}
+
+#map-canvas{
+	width: 100%;
+	height: 380px;
+	margin-top: 35px;
+
+}
+
+
+
+
+
+.img-div-3{
+
+	width: 100%;
+	height: 200px;
+}
+
+/*---------------*/
+/***** EFFECT - prueba Carmen *****/
+/*---------------*/
+
+figure.effect {
+	background: #81ABC1;
+	color: #FFF;
+}
+
+figure.effect img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect:hover img {
+	opacity: 0.2;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect figcaption {
+	text-align: left;
+}
+
+figure.effect h3 {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect:hover h3 {
+	opacity: 1;
+}
+
+figure.effect h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect:hover h3::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect p {
+	padding-top: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
+
+/*borrado por mi: #projects .row > div { margin-bottom: 30px; } */
+figure { position: relative; overflow: hidden; }
+figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
+figure p > strong { width: 60px; display: inline-block; margin: 0px; }
+figure img { width: 110%; }
+
+figure figcaption {
+	padding: 20px 30px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+figure .icon { 
+	background: #81ABC1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 48px;
+	height: 48px;
+	vertical-align: middle;
+	text-align: center;
+}
+figure .icon i {
+	font-size: 18px;
+	line-height: 48px;
+}
+figure .title { 
+	font-size: 18px;
+	background: #81ABC1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 180px;
+	height: 48px;
+	line-height: 48px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+figure.effect:hover .title {
+	opacity: 0;
+}
+figure.effect:hover .date {
+	opacity: 0;
+}
+figure.effect:hover .trophy {
+	opacity: 0;
+}
+
+/*Classes para los desplegables a partir de imagenes*/
+
+ .add_pointer{
+ 	cursor: pointer;
+ 	
+ }
+
+  .image_showcase{
+    cursor: pointer;
+
+  }
+
+  .image_showcase:hover{
+    opacity: 0.55;
+    transition: opacity 800ms;
+    filter: alpha(opacity=50);  
+  }
+
+
+
+
+/*Fixing the bootstrap*/
+
+.nav_correct .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #F8F6F6;
+    background-color: transparent;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: #E7E7E7;
+}
+
+.navbar-default .navbar-brand {
+    color: #B4B4B4;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #EDEDED;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #D8D8D8;
+}
+
+  }
