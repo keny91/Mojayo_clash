@@ -92,7 +92,7 @@ body{
 }
 
 
-.fondo_contactos{
+.fondo_defense{
 	background: url(../img/sample3.jpg);
 	background-size: cover;
 }
@@ -102,7 +102,7 @@ body{
 	background-size: cover;
 }
 
-.fondo_tratamientos{
+.fondo_war{
 	background: url(../img/sample3.jpg);
 	background-size: cover;
 }
@@ -112,7 +112,7 @@ body{
 }
 
 
-.list_tratamientos li{
+.list_war li{
 	font-size: 20pt;
 
 }
@@ -373,8 +373,37 @@ body{
 .extra-padding-4d{	padding: 10px 20px 10px 20px;}
 
 .color-container{	
+	height: 260px;
 	border-radius: 5px;
-	background-color: #81ABC1;}
+	background-color: #375442;
+	color:#EEE;
+	}
+
+
+
+.color-container p , ul, h2{
+	margin-left: 15px;
+}
+
+.color-container ul {	
+	
+	font-size: 14pt;
+	
+	}
+
+
+.color-container p a{	
+	color: #BBB;
+	font-size: 12pt;
+	padding-top: 5px;
+	}
+
+.color-container p a:hover{	
+	color: #FFF;
+	font-size: 12pt;
+
+	
+	}
 
 .color-icon{
 	/*position: relative;*/

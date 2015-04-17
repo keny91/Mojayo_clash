@@ -3,12 +3,12 @@
 
 
 
-/*  
+  
 $('#pie').ready(function(){
-*/
- /*   clickInicio();*/
+
+    clickInicio();
     
-/*  });*/
+  });
 
 
 
@@ -53,7 +53,7 @@ function clickInicio(){
 
   $('#bloque_war').slideUp();
   $('#bloque_personal').slideUp();
-  $('#bloque_contacto').slideUp();*/
+  $('#bloque_defense').slideUp();*/
 
 /*  $("#contenedor_bloques").load("./html/home.html", function(){
        $('#contenedor_bloques').fadeIn('slow');
@@ -69,26 +69,11 @@ function clickInicio(){
 /*  document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_war").classList.remove("active");
   document.getElementById("nav_personal").classList.remove("active");
-  document.getElementById("nav_contacto").classList.remove("active");
+  document.getElementById("nav_defense").classList.remove("active");
+  document.getElementById("nav_farm").classList.remove("active");
 }
 
-/*function clickInfo(){
-  $('#contenedor_bloques').prepend($('#bloque_info'));
-  $('#bloque_info').slideDown();
-  $('#bloque_inicio').slideUp();
-  $('#bloque_war').slideUp();
-  $('#bloque_personal').slideUp();
-  $('#bloque_contacto').slideUp();
 
-  document.getElementById("nav_inicio").classList.remove("active");
-  document.getElementById("nav_info").classList.add("active");
-  document.getElementById("nav_war").classList.remove("active");
-  document.getElementById("nav_personal").classList.remove("active");
-  document.getElementById("nav_contacto").classList.remove("active");
-
-  document.getElementById("map-canvas").style.display="block";
-  initialize();
-}*/
 
 function clickwar(){
 
@@ -100,7 +85,7 @@ function clickwar(){
   $('#bloque_war').slideDown();
   $('#bloque_inicio').slideUp();
   $('#bloque_personal').slideUp();
-  $('#bloque_contacto').slideUp();
+  $('#bloque_defense').slideUp();
 
 */
 
@@ -109,16 +94,36 @@ function clickwar(){
  /* document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_war").classList.add("active");
   document.getElementById("nav_personal").classList.remove("active");
-  document.getElementById("nav_contacto").classList.remove("active");
-
+  document.getElementById("nav_defense").classList.remove("active");
+  document.getElementById("nav_farm").classList.remove("active");
  /* document.getElementById("hover_image1").classList.add("resizable_hover_image");
   document.getElementById("hover_image2").classList.add("resizable_hover_image");
   document.getElementById("hover_image3").classList.add("resizable_hover_image");*/
 
 }
+
+
+function clickFarm(){
+
+  $("#contenedor_bloques").load("./html/farm.html");
+/*
+  $('#contenedor_bloques').prepend($('#bloque_personal'));
+  $('#bloque_personal').slideDown();
+  $('#bloque_inicio').slideUp();
+  $('#bloque_war').slideUp();
+  $('#bloque_defense').slideUp();*/
+
+
+  document.getElementById("nav_farm").classList.add("active");
+  document.getElementById("nav_inicio").classList.remove("active");
+/*  document.getElementById("nav_info").classList.remove("active");*/
+  document.getElementById("nav_war").classList.remove("active");
+  document.getElementById("nav_personal").classList.remove("active");
+  document.getElementById("nav_defense").classList.remove("active");
+}
+
+
 function clickPersonal(){
-
-
 
   $("#contenedor_bloques").load("./html/personal.html");
 /*
@@ -126,34 +131,35 @@ function clickPersonal(){
   $('#bloque_personal').slideDown();
   $('#bloque_inicio').slideUp();
   $('#bloque_war').slideUp();
-  $('#bloque_contacto').slideUp();*/
+  $('#bloque_defense').slideUp();*/
 
   document.getElementById("nav_inicio").classList.remove("active");
+  document.getElementById("nav_farm").classList.remove("active");
 /*  document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_war").classList.remove("active");
   document.getElementById("nav_personal").classList.add("active");
-  document.getElementById("nav_contacto").classList.remove("active");
+  document.getElementById("nav_defense").classList.remove("active");
 }
 
 
-function clickContacto(){
+function clickdefense(){
 
-   $("#contenedor_bloques").load("./html/contacto.html");
+   $("#contenedor_bloques").load("./html/defense.html");
 
-/*  $('#contenedor_bloques').prepend($('#bloque_contacto'));
-  $('#bloque_contacto').slideDown();
+/*  $('#contenedor_bloques').prepend($('#bloque_defense'));
+  $('#bloque_defense').slideDown();
   $('#bloque_inicio').slideUp();
   $('#bloque_war').slideUp();
   $('#bloque_personal').slideUp();
 */
   document.getElementById("nav_inicio").classList.remove("active");
-  /*document.getElementById("nav_info").classList.remove("active");*/
+  document.getElementById("nav_farm").classList.remove("active");
   document.getElementById("nav_war").classList.remove("active");
   document.getElementById("nav_personal").classList.remove("active");
-  document.getElementById("nav_contacto").classList.add("active");
+  document.getElementById("nav_defense").classList.add("active");
 
-  document.getElementById("map-canvas").style.display="block";
-  initialize();
+ /* document.getElementById("map-canvas").style.display="block";
+  initialize();*/
  /* google.maps.event.addDomListener(window, 'load', initialize);*/
 }
 
