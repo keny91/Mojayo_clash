@@ -18,7 +18,7 @@ $('#pie').ready(function(){
 
 
 
-
+/*
   function initialize() {
     var myLatlng = new google.maps.LatLng(40.451846,-3.687233);
     var mapOptions = {
@@ -38,7 +38,7 @@ $('#pie').ready(function(){
   google.maps.event.addDomListener(window, 'load', initialize);
   //google.maps.event.trigger(map, 'resize');
 
-
+*/
 
 
 

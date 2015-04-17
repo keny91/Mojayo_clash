@@ -331,12 +331,12 @@ body{
 }
 
 .rotulo2{
-	width: 50%;
+	/*width: 50%;*/
+	height: 140px;
 	position: relative;
-	top: -65px;
+	top: -55px;
+	left: -20px;
 	/*	font-family: arial thin;*/
-	font-size: 56pt;
-	font-weight: 700;
 	padding-bottom: 20px;
 }
 
@@ -379,7 +379,11 @@ body{
 	color:#EEE;
 	}
 
-
+.rotulos_navbar{
+	height: 35px;
+	position: relative;
+	margin-top: -8px;
+}
 
 .color-container p , ul, h2{
 	margin-left: 15px;
