@@ -113,11 +113,13 @@ body{
 
 
 .list_war li{
-	font-size: 20pt;
+	font-size: 16pt;
 
 }
 
-
+.medium_text{
+	font-size: 13pt;
+}
 
 
 /*Fade on load*/
@@ -204,10 +206,10 @@ body{
 
 .second_plane_img{
 	position: absolute;
-	top: 60px;
+	top: 30px;
 	left: 90px;
-	width: 350px;
-    height: 220px;
+	width: 430px;
+    /*height: 220px;*/
     z-index: 1;
 
 }
@@ -215,15 +217,15 @@ body{
 .first_plane_img_bot_left{
 
 	position: absolute;
-	top: 190px;
-	left: 40px;
-	width: 180px;
-    height: 125px;
+	top: 150px;
+	left: 30px;
+	/*width: 180px;*/
+    height: 200px;
 
     /*background-color: yellow;*/
     /*rgba(95, 161, 192, 0.61)*/
-    box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.61);
-    overflow: inherit;
+    /*box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.61);
+    overflow: inherit;*/
 	
 }
 
@@ -271,7 +273,7 @@ body{
 
 .rotulo_remark{
 	position: relative;
-	background-color: rgba(60, 60, 100, 0.6);
+	background-color: rgba(78, 78, 78, 0.6);
 	margin-top: 50px;
 	padding: 10px 50px 10px 30px;
 	padding-right: 0px;
@@ -281,7 +283,7 @@ body{
 	font-family: arial;
 	font-size: 30pt;
 	font-weight: bold;	
-	color: rgba(30, 30, 30, 1);
+	color: #DDD;
 
 }
 
