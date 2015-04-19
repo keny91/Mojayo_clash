@@ -28,7 +28,7 @@ body{
 	height: 100px;
 
 	background-color: rgba(95, 161, 192, 0.61);
-	background: url(../img/fondo_logo.jpg);
+	background: url(../img/fondos/fondo_logo.jpg);
 	background-size: 100% auto;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -98,12 +98,12 @@ body{
 }
 
 .fondo_home{
-	background: url(../img/fondo_inicio_saturado.jpg);
+	background: url(../img/fondos/fondo_inicio_saturado.jpg);
 	background-size: cover;
 }
 
 .fondo_war{
-	background: url(../img/sample3.jpg);
+	background: url(../img/fondos/fondo_war.jpg);
 	background-size: cover;
 }
 .fondo_conocenos{
@@ -270,15 +270,21 @@ body{
 	opacity: 0.7;
 }
 
+.rotulo_remark_outter{
+
+
+}
 
 .rotulo_remark{
-	position: relative;
-	background-color: rgba(78, 78, 78, 0.6);
-	margin-top: 50px;
-	padding: 10px 50px 10px 30px;
-	padding-right: 0px;
-	border-radius: 5px;
 
+	/*position: relative;*/
+	background-color: rgba(17, 60, 12, 0.84);
+	margin-top: 150px;
+	padding: 10px 90px 10px 30px;
+	padding-right: 20px;
+	border-radius: 5px;
+	/*top: 50px;*/
+	
 
 	font-family: arial;
 	font-size: 30pt;
@@ -286,6 +292,12 @@ body{
 	color: #DDD;
 
 }
+
+#trat_bloq_2{
+	margin-top: 50px;
+
+}
+
 
 .rotulo_imagen_fondo{
 	position: absolute;
@@ -362,9 +374,22 @@ body{
 	/*vertical-align: left;*/
 }
 
+
+.rotulo_th{
+	position: relative;
+	width: 200px;
+	top: 70px;
+}
+
+.rotulo_guerra{
+	position: relative;
+	width: 280px;
+	top: 70px;
+}
+
 .imagen_fondo_complementaria{
 	position: absolute;
-	z-index: 1000;
+	z-index: 1;
 	width: 300px;
 	height: 300px;
 	right: 300px;
@@ -397,6 +422,12 @@ body{
 	
 	}
 
+
+.color-container h2{
+	text-align: center;
+	padding-bottom: 5px;
+	margin-left: -12px;
+}
 
 .color-container p a{	
 	color: #BBB;
@@ -437,23 +468,15 @@ right: -45px;*/
   }
 
 
-#bloque_expositor.expositor_fondo{
-	top: 0;
-	left: 0;
-	/*height: 400px;*/
-	background-color: rgba(202,210,217,1);
-	background-size: 100% 600px;
-	/*background-repeat: fixed;*/
-	padding-top: 15px;
-	margin-top: 30px;
-	/*width: inherit;*/
-	/*height: inherit;*/
-	width: 100%;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
-}
 
+
+#rotulo_stars .rotulo_remark{}
+
+
+.bloque_expositor .descriptor{
+
+	font-size: 14pt;
+}
 
 .aligned_block{
 
@@ -467,7 +490,7 @@ right: -45px;*/
 	left: 0;
 	/*height: 400px;*/
 	
-	background-color: rgba(202,210,217,1);
+	background-color: rgba(55,84,66,0.4);
 	background-size: 100% 600px;
 	/*background-repeat: fixed;*/
 	padding-top: 15px;
@@ -540,6 +563,23 @@ right: -45px;*/
 }
 /*
 div.footer_color{*/
+
+
+/*Star ratings*/
+
+
+.star_rating span{
+	font-size: 12pt;
+	display: inline;
+}
+
+.star_rating span{
+	font-size: 12pt;
+	display: inline;
+
+}
+
+
 
 .opacity_50to100{
 

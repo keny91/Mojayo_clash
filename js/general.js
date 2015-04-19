@@ -2,11 +2,12 @@
 
 
 
-
+/*On Load*/
   
-$('#pie').ready(function(){
+$('#logo').ready(function(){
 
     clickInicio();
+    load_Home();
     
   });
 
@@ -16,152 +17,109 @@ $('#pie').ready(function(){
 
 
 
-
-
-/*
-  function initialize() {
-    var myLatlng = new google.maps.LatLng(40.451846,-3.687233);
-    var mapOptions = {
-      center: myLatlng,
-      zoom: 17,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-    }
-    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Centro médico Concha Espina'});
-  }
-  
-  //map = new google.maps.Map(document.getElementById("map_canvas"), { mapTypeId: google.maps.MapTypeId.ROADMAP });
-  google.maps.event.addDomListener(window, 'load', initialize);
-  //google.maps.event.trigger(map, 'resize');
-
-*/
-
-
-
-
-
-
-
+/*Active tabs control*/
 
 function clickInicio(){
-  /*$('#contenedor_bloques').prepend($('#bloque_inicio'));
-  $('#bloque_inicio').slideDown();
-
-  $('#bloque_war').slideUp();
-  $('#bloque_personal').slideUp();
-  $('#bloque_defense').slideUp();*/
-
-/*  $("#contenedor_bloques").load("./html/home.html", function(){
-       $('#contenedor_bloques').fadeIn('slow');
-       $("#contenedor_bloques").load("./html/home.html");
-    });
-*/
-
-
-  $("#contenedor_bloques").load("./html/home.html");
-
 
   document.getElementById("nav_inicio").classList.add("active");
-/*  document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_war").classList.remove("active");
   document.getElementById("nav_personal").classList.remove("active");
   document.getElementById("nav_defense").classList.remove("active");
   document.getElementById("nav_farm").classList.remove("active");
-}
 
+}
 
 
 function clickwar(){
 
-
-  $("#contenedor_bloques").load("./html/war.html");
-
-
-/*  $('#contenedor_bloques').prepend($('#bloque_war'));
-  $('#bloque_war').slideDown();
-  $('#bloque_inicio').slideUp();
-  $('#bloque_personal').slideUp();
-  $('#bloque_defense').slideUp();
-
-*/
-
-
   document.getElementById("nav_inicio").classList.remove("active");
- /* document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_war").classList.add("active");
   document.getElementById("nav_personal").classList.remove("active");
   document.getElementById("nav_defense").classList.remove("active");
   document.getElementById("nav_farm").classList.remove("active");
- /* document.getElementById("hover_image1").classList.add("resizable_hover_image");
-  document.getElementById("hover_image2").classList.add("resizable_hover_image");
-  document.getElementById("hover_image3").classList.add("resizable_hover_image");*/
 
 }
 
 
 function clickFarm(){
 
-  $("#contenedor_bloques").load("./html/farm.html");
-/*
-  $('#contenedor_bloques').prepend($('#bloque_personal'));
-  $('#bloque_personal').slideDown();
-  $('#bloque_inicio').slideUp();
-  $('#bloque_war').slideUp();
-  $('#bloque_defense').slideUp();*/
-
-
   document.getElementById("nav_farm").classList.add("active");
   document.getElementById("nav_inicio").classList.remove("active");
-/*  document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_war").classList.remove("active");
   document.getElementById("nav_personal").classList.remove("active");
   document.getElementById("nav_defense").classList.remove("active");
 }
 
-
 function clickPersonal(){
-
-  $("#contenedor_bloques").load("./html/personal.html");
-/*
-  $('#contenedor_bloques').prepend($('#bloque_personal'));
-  $('#bloque_personal').slideDown();
-  $('#bloque_inicio').slideUp();
-  $('#bloque_war').slideUp();
-  $('#bloque_defense').slideUp();*/
 
   document.getElementById("nav_inicio").classList.remove("active");
   document.getElementById("nav_farm").classList.remove("active");
-/*  document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_war").classList.remove("active");
   document.getElementById("nav_personal").classList.add("active");
   document.getElementById("nav_defense").classList.remove("active");
 }
 
 
+
 function clickdefense(){
 
-   $("#contenedor_bloques").load("./html/defense.html");
-
-/*  $('#contenedor_bloques').prepend($('#bloque_defense'));
-  $('#bloque_defense').slideDown();
-  $('#bloque_inicio').slideUp();
-  $('#bloque_war').slideUp();
-  $('#bloque_personal').slideUp();
-*/
   document.getElementById("nav_inicio").classList.remove("active");
   document.getElementById("nav_farm").classList.remove("active");
   document.getElementById("nav_war").classList.remove("active");
   document.getElementById("nav_personal").classList.remove("active");
   document.getElementById("nav_defense").classList.add("active");
 
- /* document.getElementById("map-canvas").style.display="block";
-  initialize();*/
- /* google.maps.event.addDomListener(window, 'load', initialize);*/
 }
+
+
+/*load each HTML*/
+
+function load_Home(){
+
+  $("#contenedor_bloques").load("./html/home.html");
+  clickInicio();
+}
+
+
+function load_war_th7(){
+
+  $('#contenedor_bloques').load('./html/war/th7.html');
+  clickwar();
+
+}
+
+function load_war_th8(){
+
+  $('#contenedor_bloques').load('./html/war/th8.html');
+  clickwar();
+
+}
+
+
+
+function load_farm_thX(){
+  $("#contenedor_bloques").load("./html/farm.html");
+  clickFarm();
+}
+
+
+function load_defense_thX(){
+   $("#contenedor_bloques").load("./html/defense.html");
+  clickFarm();
+}
+
+function load_personal(){
+   $("#contenedor_bloques").load("./html/personal.html");
+  clickFarm();
+}
+
+
+
+
+
+
+
+
 
 
 /*Functions for image-slide expositors*/
@@ -209,30 +167,6 @@ function clickImage4(){
 var factor = 2; /*double size*/
 var foo_width = $('.resizable_hover_image').width();
 var foo_height = $('.resizable_hover_image').height();
-
-
-/*$('.resizable_hover_image').mouseenter(function() {
-    $(this).animate({
-        top: '-=' + foo_width / factor,
-        left: '-=' + foo_height / factor,
-        width: $(this).width() * factor,
-        height: $(this).height() * factor
-        
-    },1000);
-    $(this).css('z-index', 100);
-});
-*/
-/*$('.resizable_hover_image').mouseout(function() {
-    $(this).animate({
-        top: '+=' + foo_width/ factor,
-        left: '+=' + foo_height / factor,
-        width: $(this).width() / factor,
-        height: $(this).height() / factor
-
-        
-    },1000);
-    $(this).css('z-index', 1);
-});*/
 
 
 $(".resizable_hover_image" ).on( "mouseenter", function() {
