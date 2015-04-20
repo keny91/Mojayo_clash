@@ -278,7 +278,7 @@ body{
 .rotulo_remark{
 
 	/*position: relative;*/
-	background-color: rgba(17, 60, 12, 0.84);
+	background-color: rgba(17, 60, 12, 1);
 	margin-top: 150px;
 	padding: 10px 90px 10px 30px;
 	padding-right: 20px;
@@ -468,14 +468,22 @@ right: -45px;*/
   }
 
 
+#rotulo_stars{
+	width: 50%;
+	position: relative;
+	top: 30px;
+}
+
+#rotulo_stars .rotulo_remark{
 
 
-#rotulo_stars .rotulo_remark{}
+}
 
 
 .bloque_expositor .descriptor{
 
-	font-size: 14pt;
+	font-size: 20pt;
+	font-weight: bold;
 }
 
 .aligned_block{
@@ -484,24 +492,52 @@ right: -45px;*/
 	vertical-align: middle;
 }
 
-.expositor_fondo{
-
-		top: 0;
+.bloque_expositor{
+	color: #eee;
+	font-size: 16pt;
+	top: 0;
 	left: 0;
 	/*height: 400px;*/
-	
-	background-color: rgba(55,84,66,0.4);
-	background-size: 100% 600px;
+	padding-top: 100px;
+	padding-bottom: 10px;
+	background-color: rgba(55,84,66,0.7);
+	background-size: 100%;
 	/*background-repeat: fixed;*/
-	padding-top: 15px;
+	
 	margin-top: 0px;
 	/*width: inherit;*/
 	/*height: inherit;*/
 	width: 100%;
-	padding-top: 0px;
-	padding-bottom: 0px;
 }
 
+.video_boton{
+	position: relative;
+	top: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: #DDD;
+	width: 300px;
+	background-color: rgba(55,84,66,1);
+	background-size: 100%;
+	border-radius: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+	border: 4px;
+	border-color: #98801A; 
+
+}
+
+.video_boton span{
+	font-size: 22pt;
+}
+
+.video_boton:hover{
+	color: #444;
+	background-color: rgba(100,130,120,1);
+	cursor: pointer;
+}
 
 #contenedor_imagenes.expositor_fondo{
 
@@ -523,7 +559,7 @@ right: -45px;*/
 
 }
 
-#rotulo_menciones.expositor_fondo{
+#rotulo_menciones.expositor_fonbattldo{
 
 	top: 30px;
 	left: 0;
