@@ -503,7 +503,7 @@ right: -45px;*/
 	border-top-style: solid;
 	border-top-color: #375442;
 	border-top-width: 10px;
-	
+
 }
 
 .video_boton{
@@ -615,6 +615,9 @@ div.footer_color{*/
 	width: 50%;
 	position: relative;
 	top: 30px;
+	background-color: #375442;
+	color: #FFF;
+	top: 41px;
 }
 
 
