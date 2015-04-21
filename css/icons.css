@@ -21,6 +21,23 @@
 	line-height: 1;
 }
 
+
+.medium_icon{ 
+
+		font-family: 'IcoMoon-Free';
+	/*color:#AAA;*/
+/*	height: 64px;
+	width: 64px;*/
+	speak: none;
+	font-size: 16pt;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+
+
 .icon {
 	font-family: 'IcoMoon-Free';
 	/*color:#AAA;*/

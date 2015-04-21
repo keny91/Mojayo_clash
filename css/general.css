@@ -279,8 +279,8 @@ body{
 
 	/*position: relative;*/
 	background-color: rgba(17, 60, 12, 1);
-	margin-top: 150px;
-	padding: 10px 90px 10px 30px;
+	margin-top: 60px;
+	padding: 10px 40px 10px 30px;
 	padding-right: 20px;
 	border-radius: 5px;
 	/*top: 50px;*/
@@ -468,16 +468,7 @@ right: -45px;*/
   }
 
 
-#rotulo_stars{
-	width: 50%;
-	position: relative;
-	top: 30px;
-}
 
-#rotulo_stars .rotulo_remark{
-
-
-}
 
 
 .bloque_expositor .descriptor{
@@ -505,14 +496,19 @@ right: -45px;*/
 	/*background-repeat: fixed;*/
 	
 	margin-top: 0px;
-	/*width: inherit;*/
-	/*height: inherit;*/
 	width: 100%;
+	border-bottom-style: solid;
+	border-bottom-color: #375442;
+	border-bottom-width: 10px;
+	border-top-style: solid;
+	border-top-color: #375442;
+	border-top-width: 10px;
+	
 }
 
 .video_boton{
 	position: relative;
-	top: 40px;
+	top: 45px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -526,6 +522,7 @@ right: -45px;*/
 	text-align: center;
 	border: 4px;
 	border-color: #98801A; 
+	z-index: 100;
 
 }
 
@@ -533,10 +530,21 @@ right: -45px;*/
 	font-size: 22pt;
 }
 
+
 .video_boton:hover{
 	color: #444;
-	background-color: rgba(100,130,120,1);
+	background-color: rgba(129,185,150,1);
 	cursor: pointer;
+}
+
+.video_container{
+	position: relative;
+	width: 50%;
+    margin: 0 auto;
+
+	padding-top: 70px;
+	padding-bottom: 30px;
+	z-index: 1;
 }
 
 #contenedor_imagenes.expositor_fondo{
@@ -603,15 +611,26 @@ div.footer_color{*/
 
 /*Star ratings*/
 
-
-.star_rating span{
-	font-size: 12pt;
-	display: inline;
+#rotulo_stars{
+	width: 50%;
+	position: relative;
+	top: 30px;
 }
 
-.star_rating span{
-	font-size: 12pt;
+
+.stars{
+	position: relative;
+	float: right;
+	bottom: 6px;
+	right: 10px;
+	
+}
+
+.stars span{
+	
+	font-size: 16pt;
 	display: inline;
+	color: #FFF;
 
 }
 
